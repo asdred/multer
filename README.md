@@ -286,3 +286,8 @@ For information on how to build your own storage engine, see [Multer Storage Eng
 ## License
 
 [MIT](LICENSE)
+
+## From asdred
+
+Updated DiskStorage. 
+Added md5 hash field.
