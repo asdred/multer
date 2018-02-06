@@ -42,6 +42,7 @@ DiskStorage.prototype._handleFile = function _handleFile (req, file, cb) {
       outStream.on('error', cb)
       outStream.on('data', function (chunk) {
         hash.update(chunk)
+        console.log('multer', chunk, hash.digest('hex'));
       })
       outStream.on('finish', function () {
         cb(null, {
